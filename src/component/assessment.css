@@ -1,0 +1,20 @@
+@import "~antd/dist/antd.css";
+p span {
+  display: block;
+}
+
+.Child-Row {
+  width: 100%;
+  table-layout: auto;
+  background-color: #edf2f7;
+  border-collapse: separate;
+  margin: 1.5em 0;
+  display: flex;
+  border-spacing: 0 1em;
+  border-radius: 2em;
+}
+.Child-Column {
+  padding: 2.5em;
+  display: table-cell;
+  width: 100%;
+}
