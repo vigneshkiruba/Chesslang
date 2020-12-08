@@ -73,6 +73,8 @@ class App extends Component {
         </Header>
         <Layout>
           <Sider
+            breakpoint="xs"
+            collapsedWidth="0"
             className="slider"
             onBreakpoint={(broken) => {}}
             onCollapse={(collapsed, type) => {}}

@@ -1,7 +1,32 @@
 @import "~antd/dist/antd.css";
+@media only screen and (max-width: 480px) {
+  p span {
+    display: block;
+  }
 
+  .Child-Row {
+    width: 100%;
+    table-layout: auto;
+    background-color: #edf2f7;
+    border-collapse: separate;
+    margin: 0.2em 0;
+    display: table;
+    border-spacing: 0 0.2em;
+    border-radius: 0.3em;
+  }
+  .Child-Column {
+    padding: 0.2em;
+    display: table-cell;
+    width: 100%;
+  }
+  .Child1-Column {
+    padding: 0.2em 0.5em 0.2em 0.2em;
+    display: table-cell;
+    width: 100%;
+  }
+}
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 480px) {
   p span {
     display: block;
   }
