@@ -18,29 +18,22 @@ class assessment extends React.Component {
         {this.props.data.map((i) => {
           return (
             <div className="Child-Row">
-              <div
-                className="Child-Column"
-                style={{ "padding-right": "8.5em" }}
-              >
+              <div className="Child1-Column">
                 <span>
                   <h2>Assessments {i.Year}</h2>
                 </span>
                 <span>
-                  <nobr>
-                    <h5>Created by {i.Coach}</h5>
-                  </nobr>
+                  <h5>Created by {i.Coach}</h5>
                 </span>
                 <span>
-                  <nobr>
-                    <h5>
-                      {i.Questions} Questions, Total Time Required: {i.Time}min
-                      Level: <span style={{ color: "green" }}>{i.Level}</span>{" "}
-                    </h5>
-                  </nobr>
+                  <h5>
+                    {i.Questions} Questions, Total Time Required:{i.Time}min
+                    Level:<span style={{ color: "green" }}>{i.Level}</span>{" "}
+                  </h5>
                 </span>
               </div>
 
-              {i.Attendance != "" ? (
+              {i.Attendance !== "" ? (
                 <div className="Child-Column">
                   <span>
                     <h3>Total Attendance </h3>{" "}
@@ -50,9 +43,9 @@ class assessment extends React.Component {
                   </span>
                 </div>
               ) : (
-                <div className="Child-Column"></div>
+                <div className="Child-Column"> </div>
               )}
-              {i.Lead != "" ? (
+              {i.Lead !== "" ? (
                 <div className="Child-Column">
                   <span>
                     <h3>Lead Generated </h3>{" "}
@@ -62,7 +55,10 @@ class assessment extends React.Component {
                   </span>
                 </div>
               ) : (
-                <div className="Child-Column"></div>
+                <div className="Child-Column">
+                  &nbsp; &nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
               )}
               <div className="Child-Column" style={{ textAlign: "center" }}>
                 <MoreOutlined />

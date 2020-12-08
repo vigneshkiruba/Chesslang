@@ -1,84 +1,458 @@
 @import "~antd/dist/antd.css";
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .ant-page-header {
+    padding: 0 !important;
+  }
+  .ant-layout,
+  .ant-layout-footer {
+    background-color: white;
+  }
+  .content {
+    margin: 6px 3px 0;
+  }
+  .Row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .Column {
+    display: table-cell;
+    background-color: white;
+  }
+  .avatar {
+    float: left;
+  }
+  .title {
+    padding: 2px;
+    margin-left: 2em;
+  }
+  .assessment-button {
+    border-radius: 0.3em;
+  }
+  .notify {
+    font-size: 14px;
+  }
+  .slider {
+    background: white;
+    background-color: white;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    flex: 0 0 100px !important;
+    max-width: 100px !important;
+    min-width: 100px !important;
+    width: 100px !important;
+  }
+  .footer-tag {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    font-size: 12px;
+  }
+  .menu {
+    text-align: center;
+    border-right: none;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 0.5em;
+  }
+  .site-layout-sub-header-background {
+    height: 3.333em;
+    background: #fff;
+  }
 
-.ant-layout,
-.ant-layout-footer {
-  background-color: white;
-}
-.content {
-  margin: 24px 16px 0;
-}
-.Row {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
-.Column {
-  display: table-cell;
-  background-color: white;
-}
-.avatar {
-  float: left;
-}
-.title {
-  padding: 10px;
-  margin-left: 7.5em;
-}
-.assessment-button {
-  border-radius: 0.5em;
-}
-.notify {
-  font-size: 18px;
-}
-.slider {
-  background: white;
-  background-color: white;
-  color: white;
-  padding-left: 4em;
-  padding-right: 4em;
-}
-.footer-tag {
-  padding-left: 6.5em;
-  font-size: 18px;
-}
-.menu {
-  text-align: center;
-  border-right: none;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-radius: 0.5em;
-}
-.site-layout-sub-header-background {
-  height: 6.333em;
-  background: #fff;
+  .site-layout-background {
+    padding: 5;
+    min-height: 200;
+    background: #fff;
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 15vmin;
+    pointer-events: none;
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(4px + 1vmin);
+    color: white;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.site-layout-background {
-  padding: 24;
-  min-height: 360;
-  background: #fff;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .ant-layout,
+  .ant-layout-footer {
+    background-color: white;
+  }
+  .content {
+    margin: 10px 6px 0;
+  }
+  .Row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .Column {
+    display: table-cell;
+    background-color: white;
+  }
+  .avatar {
+    float: left;
+  }
+  .title {
+    padding: 3px;
+    margin-left: 4em;
+  }
+  .assessment-button {
+    border-radius: 0.3em;
+  }
+  .notify {
+    font-size: 14px;
+  }
+  .slider {
+    background: white;
+    background-color: white;
+    color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    flex: 0 0 150px !important;
+    max-width: 150px !important;
+    min-width: 150px !important;
+    width: 150px !important;
+  }
+  .footer-tag {
+    padding-left: 3em;
+    padding-right: 3em;
+    font-size: 14px;
+  }
+  .menu {
+    text-align: center;
+    border-right: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.5em;
+  }
+  .site-layout-sub-header-background {
+    height: 4.333em;
+    background: #fff;
+  }
+
+  .site-layout-background {
+    padding: 10;
+    min-height: 250;
+    background: #fff;
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 25vmin;
+    pointer-events: none;
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(6px + 1vmin);
+    color: white;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.App {
-  text-align: center;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .ant-layout,
+  .ant-layout-footer {
+    background-color: white;
+  }
+  .content {
+    margin: 12px 8px 0;
+  }
+  .Row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .Column {
+    display: table-cell;
+    background-color: white;
+  }
+  .avatar {
+    float: left;
+  }
+  .title {
+    padding: 7px;
+    margin-left: 6.5em;
+  }
+  .assessment-button {
+    border-radius: 0.3em;
+  }
+  .notify {
+    font-size: 14px;
+  }
+  .slider {
+    background: white;
+    background-color: white;
+    color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    flex: 0 0 150px !important;
+    max-width: 150px !important;
+    min-width: 150px !important;
+    width: 150px !important;
+  }
+  .footer-tag {
+    padding-left: 3em;
+    padding-right: 3em;
+    font-size: 14px;
+  }
+  .menu {
+    text-align: center;
+    border-right: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.5em;
+  }
+  .site-layout-sub-header-background {
+    height: 4.333em;
+    background: #fff;
+  }
+
+  .site-layout-background {
+    padding: 20;
+    min-height: 300;
+    background: #fff;
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 30vmin;
+    pointer-events: none;
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(8px + 2vmin);
+    color: white;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .ant-layout,
+  .ant-layout-footer {
+    background-color: white;
+  }
+  .content {
+    margin: 24px 16px 0;
+  }
+  .Row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .Column {
+    display: table-cell;
+    background-color: white;
+  }
+  .avatar {
+    float: left;
+  }
+  .title {
+    padding: 10px;
+    margin-left: 7.5em;
+  }
+  .assessment-button {
+    border-radius: 0.5em;
+  }
+  .notify {
+    font-size: 18px;
+  }
+  .slider {
+    background: white;
+    background-color: white;
+    color: white;
+    padding-left: 4em;
+    padding-right: 4em;
+    flex: 0 0 200px !important;
+    max-width: 200px !important;
+    min-width: 200px !important;
+    width: 200px !important;
+  }
+  .footer-tag {
+    padding-left: 5em;
+    padding-right: 5em;
+    font-size: 18px;
+  }
+  .menu {
+    text-align: center;
+    border-right: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.5em;
+  }
+  .site-layout-sub-header-background {
+    height: 6.333em;
+    background: #fff;
+  }
+
+  .site-layout-background {
+    padding: 24;
+    min-height: 360;
+    background: #fff;
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .ant-layout,
+  .ant-layout-footer {
+    background-color: white;
+  }
+  .content {
+    margin: 24px 16px 0;
+  }
+  .Row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+  .Column {
+    display: table-cell;
+    background-color: white;
+  }
+  .avatar {
+    float: left;
+  }
+  .title {
+    padding: 10px;
+    margin-left: 7.5em;
+  }
+  .assessment-button {
+    border-radius: 0.5em;
+  }
+  .notify {
+    font-size: 18px;
+  }
+  .slider {
+    background: white;
+    background-color: white;
+    color: white;
+    padding-left: 4em;
+    padding-right: 4em;
+    flex: 0 0 200px !important;
+    max-width: 200px !important;
+    min-width: 200px !important;
+    width: 200px !important;
+  }
+  .footer-tag {
+    padding-left: 5em;
+    padding-right: 5em;
+    font-size: 18px;
+  }
+  .menu {
+    text-align: center;
+    border-right: none;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.5em;
+  }
+  .site-layout-sub-header-background {
+    height: 6.333em;
+    background: #fff;
+  }
 
-.responsive {
-  width: 100%;
-  height: auto;
+  .site-layout-background {
+    padding: 24;
+    min-height: 360;
+    background: #fff;
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
 }

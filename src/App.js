@@ -49,7 +49,7 @@ class App extends Component {
               {" "}
               <Avatar
                 className="avatar"
-                size={{ xs: 10, sm: 18, md: 26, lg: 50, xl: 66, xxl: 85 }}
+                size={{ xs: 28, sm: 35, md: 44, lg: 54, xl: 70, xxl: 85 }}
                 src="./logo1.png"
               />
               <Title className="title" level={3}>
@@ -74,8 +74,6 @@ class App extends Component {
         <Layout>
           <Sider
             className="slider"
-            breakpoint="lg"
-            collapsedWidth="0"
             onBreakpoint={(broken) => {}}
             onCollapse={(collapsed, type) => {}}
           >

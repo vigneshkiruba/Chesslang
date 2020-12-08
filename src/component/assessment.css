@@ -1,20 +1,143 @@
 @import "~antd/dist/antd.css";
-p span {
-  display: block;
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  p span {
+    display: block;
+  }
+
+  .Child-Row {
+    width: 100%;
+    table-layout: auto;
+    background-color: #edf2f7;
+    border-collapse: separate;
+    margin: 0.5em 0;
+    display: table;
+    border-spacing: 0 0.4em;
+    border-radius: 0.3em;
+  }
+  .Child-Column {
+    padding: 0.3em;
+    display: table-cell;
+    width: 100%;
+  }
+  .Child1-Column {
+    padding: 0.5em 1.5em 0.5em 0.5em;
+    display: table-cell;
+    width: 100%;
+  }
 }
 
-.Child-Row {
-  width: 100%;
-  table-layout: auto;
-  background-color: #edf2f7;
-  border-collapse: separate;
-  margin: 1.5em 0;
-  display: flex;
-  border-spacing: 0 1em;
-  border-radius: 2em;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  p span {
+    display: block;
+  }
+
+  .Child-Row {
+    width: 100%;
+    table-layout: auto;
+    background-color: #edf2f7;
+    border-collapse: separate;
+    margin: 1em 0;
+    display: table;
+    border-spacing: 0 0.8em;
+    border-radius: 0.6em;
+  }
+  .Child-Column {
+    padding: 0.5em;
+    display: table-cell;
+    width: 100%;
+  }
+  .Child1-Column {
+    padding: 1em 3em 1em 1em;
+    display: table-cell;
+    width: 100%;
+  }
 }
-.Child-Column {
-  padding: 2.5em;
-  display: table-cell;
-  width: 100%;
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  p span {
+    display: block;
+  }
+
+  .Child-Row {
+    width: 100%;
+    table-layout: auto;
+    background-color: #edf2f7;
+    border-collapse: separate;
+    margin: 1em 0;
+    display: table;
+    border-spacing: 0 1em;
+    border-radius: 1.3em;
+  }
+  .Child-Column {
+    padding: 1.5em;
+    display: table-cell;
+    width: 100%;
+  }
+  .Child1-Column {
+    padding: 2em 5.5em 2em 2em;
+    display: table-cell;
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  p span {
+    display: block;
+  }
+
+  .Child-Row {
+    width: 100%;
+    table-layout: auto;
+    background-color: #edf2f7;
+    border-collapse: separate;
+    margin: 1em 0;
+    display: flex;
+    border-spacing: 0 1em;
+    border-radius: 1.5em;
+  }
+  .Child-Column {
+    padding: 2em;
+    display: table-cell;
+    width: 100%;
+  }
+  .Child1-Column {
+    padding: 2.5em 6.5em 2.5em 2.5em;
+    display: table-cell;
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  p span {
+    display: block;
+  }
+
+  .Child-Row {
+    width: 100%;
+    table-layout: auto;
+    background-color: #edf2f7;
+    border-collapse: separate;
+    margin: 1.5em 0;
+    display: flex;
+    border-spacing: 0 1em;
+    border-radius: 2em;
+    white-space: nowrap;
+  }
+  .Child-Column {
+    padding: 2.5em;
+    display: table-cell;
+    width: 100%;
+    white-space: nowrap;
+  }
+  .Child1-Column {
+    padding: 2.5em 8.5em 2.5em 2.5em;
+    display: table-cell;
+    width: 100%;
+  }
 }
