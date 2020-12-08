@@ -32,34 +32,36 @@ class assessment extends React.Component {
                   </h5>
                 </span>
               </div>
+              <div
+                className={
+                  i.hasOwnProperty("Attendance")
+                    ? "Child-Column show"
+                    : "Child-Column hide"
+                }
+              >
+                <span>
+                  <h3>Total Attendance </h3>{" "}
+                </span>
+                <span>
+                  <h2>{i.Attendance}</h2>
+                </span>
+              </div>
 
-              {i.Attendance !== "" ? (
-                <div className="Child-Column">
-                  <span>
-                    <h3>Total Attendance </h3>{" "}
-                  </span>
-                  <span>
-                    <h2>{i.Attendance}</h2>
-                  </span>
-                </div>
-              ) : (
-                <div className="Child-Column"> </div>
-              )}
-              {i.Lead !== "" ? (
-                <div className="Child-Column">
-                  <span>
-                    <h3>Lead Generated </h3>{" "}
-                  </span>
-                  <span>
-                    <h2>{i.Lead}</h2>
-                  </span>
-                </div>
-              ) : (
-                <div className="Child-Column">
-                  &nbsp; &nbsp;
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </div>
-              )}
+              <div
+                className={
+                  i.hasOwnProperty("Lead")
+                    ? "Child-Column show"
+                    : "Child-Column hide"
+                }
+              >
+                <span>
+                  <h3>Lead Generated </h3>{" "}
+                </span>
+                <span>
+                  <h2>{i.Lead}</h2>
+                </span>
+              </div>
+
               <div className="Child-Column" style={{ textAlign: "center" }}>
                 <MoreOutlined />
               </div>

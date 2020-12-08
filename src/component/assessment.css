@@ -1,15 +1,22 @@
 @import "~antd/dist/antd.css";
+
+.hide {
+  visibility: hidden;
+}
+.show {
+  visibility: visible;
+}
 @media only screen and (max-width: 480px) {
   p span {
     display: block;
   }
 
   .Child-Row {
-    width: 100%;
+    width: 90%;
     table-layout: auto;
     background-color: #edf2f7;
     border-collapse: separate;
-    margin: 0.2em 0;
+    margin: auto;
     display: table;
     border-spacing: 0 0.2em;
     border-radius: 0.3em;
@@ -17,12 +24,12 @@
   .Child-Column {
     padding: 0.2em;
     display: table-cell;
-    width: 100%;
+    width: 90%;
   }
   .Child1-Column {
     padding: 0.2em 0.5em 0.2em 0.2em;
     display: table-cell;
-    width: 100%;
+    width: 90%;
   }
 }
 /* Extra small devices (phones, 600px and down) */
@@ -102,6 +109,7 @@
     display: table-cell;
     width: 100%;
   }
+
   .Child1-Column {
     padding: 2em 5.5em 2em 2em;
     display: table-cell;
